@@ -1,0 +1,16 @@
+1. Access modifier table
+//TODO
+
+2. Overloading and overriding
+
+when multiple overloaded method are present, Java looks for the closest match follow by rules:
+- exact match type
+- matching a superclass type
+- converting to a larger primitive type
+- converting to an autoboxed type
+- varargs
+
+overriding rules:
+- access modifier must be the same or more accessible
+- return type must be the same or a more restrictive type (also known as covariant return type)
+- if any CHECKED exception are thrown only the same or subclasses ot those exception are allowed to be thrown
