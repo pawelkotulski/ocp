@@ -1,5 +1,18 @@
 1. Access modifier table
-//TODO
+
+private - access only in the same class
+
+private package (default) -if the member is default can be access from:
+                * same class
+                * another class in the same package
+
+protected - if the member is protected can be access from:
+                * in the same class,
+                * another class in the same package
+                * subclass in a different package
+
+public - everywhere
+
 
 2. Overloading and overriding
 
