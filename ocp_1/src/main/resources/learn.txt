@@ -13,6 +13,10 @@ protected - if the member is protected can be access from:
 
 public - everywhere
 
+final - * variable cannot be changed
+        * method cannot be overridden
+        * class cannot be subclassed
+
 
 2. Overloading and overriding
 
@@ -27,3 +31,14 @@ overriding rules:
 - access modifier must be the same or more accessible
 - return type must be the same or a more restrictive type (also known as covariant return type)
 - if any CHECKED exception are thrown only the same or subclasses ot those exception are allowed to be thrown
+
+3. instanceof
+
+* cannot be called on classes which are not in relation (not extend one to another)
+* null instanceof Object is false
+* it is always allowed to call instanceof for interface even if class don't implement this interface
+
+
+4. Virtual method invocation
+    * calling method from exact type of class, not from parent class
+    * don't care about fields - see example code
