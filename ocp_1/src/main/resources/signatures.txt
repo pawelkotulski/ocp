@@ -1,0 +1,24 @@
+boolean equals(Object o);
+
+int hashCode()
+
+
+Enums:
+public abstract class Enum<E extends Enum<E>>
+extends Object implements Comparable<E>, Serializable
+
+int	compareTo(E o)
+
+boolean	equals(Object other)
+
+String	name()
+Returns the name of this enum constant, exactly as declared in its enum declaration.
+
+int	ordinal()
+Returns the ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero).
+
+String	toString()
+Returns the name of this enum constant, as contained in the declaration.
+
+static <T extends Enum<T>> T valueOf(Class<T> enumType, String name)
+Returns the enum constant of the specified enum type with the specified name.

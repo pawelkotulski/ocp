@@ -42,3 +42,40 @@ overriding rules:
 4. Virtual method invocation
     * calling method from exact type of class, not from parent class
     * don't care about fields - see example code
+
+5. equals
+
+The contract of equals
+
+* reflexive - for non null reference values x, x.equals(x) should return true
+* symetric - x.equals(y) return true and y.equals(x) return true
+* transitive - x.equals(y) == true and x.equals(z) == true then z.equals(y) == true
+* consistens - multiple invocation of x.equals(y) should always consistently return true or consistently return false
+* for non null refference x x.equals(null) should return false
+
+6. hashCode
+
+The contract of hashCode
+
+* within smae program result of hashCode for object should not change
+* if equals return true for some two object, hashCode for this object should be the same - hash code should be calculated from subset of equals parameters
+* if two objects are not equals they doesn't have to return different hashCode values, hashCode for this object can be the same
+
+7. Enums
+
+* in switch statement in case we cannot use enum class name wity type ex:
+case: Season.WINTER - will not compile
+case: WINTER - will compile
+
+* semicolon on end of declaration enums is optional only when there is only declaration of enum names!
+
+* overriding methods in enums:
+
+enum Season {
+    WINTER, SUMMER,
+    SPRING {
+        public void printHours() {System.out.println("custom spring hours")}
+    };
+
+    public void printHours() { System.out.println("default season hours")}
+}
