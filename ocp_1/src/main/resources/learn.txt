@@ -63,7 +63,7 @@ The contract of hashCode
 
 7. Enums
 
-* in switch statement in case we cannot use enum class name wity type ex:
+* in switch statement in case we cannot use enum class name with type ex:
 case: Season.WINTER - will not compile
 case: WINTER - will compile
 
@@ -79,3 +79,23 @@ enum Season {
 
     public void printHours() { System.out.println("default season hours")}
 }
+
+
+7. Nested clases
+
+Nested class - class within another class
+
+* nested inner class - nested class which is not static
+    - member - defined at the same level as instance variables
+    - local - defined within a method
+    - anonymus - defined within a method and doesn't have a name
+* static nested class - defined at the same level as static variables
+
+
+7.1 member inner class
+* can have be public, private, protected or default access modifier
+* can extend and implement any interfaces
+* can be abstract or final
+* can access all members of the outer class including private members
+* CANNOT declare static fields or methods
+
