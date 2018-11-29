@@ -109,7 +109,13 @@ Nested class - class within another class
 
 EFFECTIVELY FINAL - if the code still compile with the keyword final inserted before local variable the variable is effectively final.
 
-7.3 Anonymus inner class
+7.3 Anonymus inner class - same as local but without name
+
+7.4 Static nested class
+* can be instantiated without an object of the enclosing class
+* can have any access modifier in declaration of class
+* enclosing class can access to all fields an method of static inner class (including private one)
+* we can use static import or regular import to static nested class
 
 
 
