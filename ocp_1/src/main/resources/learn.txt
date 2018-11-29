@@ -92,10 +92,24 @@ Nested class - class within another class
 * static nested class - defined at the same level as static variables
 
 
-7.1 member inner class
+7.1 Member inner class
 * can have be public, private, protected or default access modifier
 * can extend and implement any interfaces
 * can be abstract or final
 * can access all members of the outer class including private members
 * CANNOT declare static fields or methods
+
+7.2 Local inner class
+* dont have an access specifier
+* cannot be declared static and cannot declare static fields or methods
+* have access to all fields and methods of the enclosing class
+* they don't have access to local variables of a method unless this variable is final or effectively final
+
+
+
+EFFECTIVELY FINAL - if the code still compile with the keyword final inserted before local variable the variable is effectively final.
+
+7.3 Anonymus inner class
+
+
 
