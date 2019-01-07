@@ -100,7 +100,7 @@ Nested class - class within another class
 * CANNOT declare static fields or methods
 
 7.2 Local inner class
-* dont have an access specifier
+* don't have an access specifier
 * cannot be declared static and cannot declare static fields or methods
 * have access to all fields and methods of the enclosing class
 * they don't have access to local variables of a method unless this variable is final or effectively final
