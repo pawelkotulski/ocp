@@ -1,4 +1,4 @@
-package bounds.upper;
+package bounds.examples.shapes;
 
 public class Rectangle extends Shape {
     private int x, y, width, height;
